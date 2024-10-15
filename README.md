@@ -1,6 +1,8 @@
 ## VR Research Project
 
 ### Interaction: Ways to Jump in VR
+Shreenija Vadayar &
+Harika Kondur
 
 ### 1. Physically jumping
 ![IMG_6342](https://github.com/user-attachments/assets/d9ebb6e3-f6e5-4e1b-96c0-b8151cab9b91)
