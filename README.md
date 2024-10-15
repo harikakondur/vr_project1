@@ -3,7 +3,11 @@
 ### Interaction: Ways to Jump in VR
 
 ### 1. Physically jumping
+![IMG_6342](https://github.com/user-attachments/assets/d9ebb6e3-f6e5-4e1b-96c0-b8151cab9b91)
+
 ### 2. Holding both triggers
+![Idea2](https://github.com/user-attachments/assets/1f9d1bf4-f2d3-4f4f-9198-6c85a6d7d0af)
+
 ### 3. Jump on click
 ![IMG_2398](https://github.com/user-attachments/assets/b6dc0de3-e6c6-4b3f-890b-9dcd6f1ecb37)
 
