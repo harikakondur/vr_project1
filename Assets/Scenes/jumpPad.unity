@@ -1685,6 +1685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 20
   charController: {fileID: 0}
+  jumpSFX: {fileID: 8300000, guid: 35a940b3dc3084fa8ac02a1492497eee, type: 3}
 --- !u!65 &1047803960
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2087,6 +2088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 20
   charController: {fileID: 1530164389}
+  jumpSFX: {fileID: 0}
 --- !u!1 &1536264009
 GameObject:
   m_ObjectHideFlags: 0
