@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
+
 
 
 public class triggerJump : MonoBehaviour
@@ -14,6 +16,8 @@ public class triggerJump : MonoBehaviour
     public CharacterController charController;
     private float verticalVelocity = 0.0f;
     private float gravity = -9.81f;
+    public AudioClip jumpSFX;
+
 
     void Start()
     {
@@ -38,6 +42,7 @@ public class triggerJump : MonoBehaviour
         if (charController.isGrounded)
         {
             verticalVelocity = jumpForce;
+            GetComponent<AudioSource>().PlayOneShot(jumpSFX);
         }
     }
 
