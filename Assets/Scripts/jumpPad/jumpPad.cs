@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
+
 
 public class JumpPad : MonoBehaviour
 {
@@ -32,5 +34,12 @@ public class JumpPad : MonoBehaviour
             verticalVelocity = jumpForce;
             GetComponent<AudioSource>().PlayOneShot(jumpSFX);
         }
+
+        if (hit.gameObject.CompareTag("nextSceneTile")) 
+        {
+            SceneManager.LoadScene("Scenes/triggerJump");
+        }
     }
+
+
 }

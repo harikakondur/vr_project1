@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.SceneManagement;
+
 
 public class triggerJump : MonoBehaviour
 {
@@ -38,4 +40,14 @@ public class triggerJump : MonoBehaviour
             verticalVelocity = jumpForce;
         }
     }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.CompareTag("nextSceneTile")) 
+        {
+            SceneManager.LoadScene("Scenes/physicalJumpScene");
+        }
+    }
+
+
 }

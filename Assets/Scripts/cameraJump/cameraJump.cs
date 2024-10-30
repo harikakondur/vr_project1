@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class CameraJump : MonoBehaviour
 {
@@ -41,5 +43,14 @@ public class CameraJump : MonoBehaviour
         }
 
         lastCameraYPosition = currentCameraYPosition;
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+
+        if (hit.gameObject.CompareTag("nextSceneTile")) 
+        {
+            SceneManager.LoadScene("Scenes/buttonPressScene");
+        }
     }
 }

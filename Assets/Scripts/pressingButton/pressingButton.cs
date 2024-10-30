@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
+
 
 public class pressingButton : MonoBehaviour
 {
@@ -11,6 +14,8 @@ public class pressingButton : MonoBehaviour
     public CharacterController charController;
     private float verticalVelocity = 0.0f;
     private float gravity = -9.81f;
+    public AudioClip jumpSFX;
+
 
     void Start()
     {
@@ -34,6 +39,16 @@ public class pressingButton : MonoBehaviour
         if (charController.isGrounded)
         {
             verticalVelocity = jumpForce;
+            GetComponent<AudioSource>().PlayOneShot(jumpSFX);
+
+        }
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.CompareTag("nextSceneTile")) 
+        {
+            SceneManager.LoadScene("Scenes/jumpPad");
         }
     }
 }

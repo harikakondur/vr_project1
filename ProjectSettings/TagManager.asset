@@ -6,6 +6,7 @@ TagManager:
   tags:
   - jumpPad
   - Ground
+  - nextSceneTile
   layers:
   - Default
   - TransparentFX
