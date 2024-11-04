@@ -2,6 +2,10 @@
 
 ### Interaction: Ways to Jump in VR
 Shreenija Vadayar &
+
+https://github.com/user-attachments/assets/57bd7196-e0ab-4878-bed2-7b4d9613afbf
+
+
 Harika Kondur
 
 ### 1. Physically jumping
